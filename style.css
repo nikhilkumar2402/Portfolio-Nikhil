@@ -20,6 +20,7 @@ html, body{
     background-color: #161616;
     z-index: 999;
     position: fixed;
+    pointer-events: none;
 }
 nav{
     background-color: #f8f8f8;
@@ -28,7 +29,7 @@ nav{
     gap: 2vw;
     align-items: center;
     height: 4vw;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 99;
 }
@@ -104,6 +105,7 @@ nav li a{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-decoration: none;
 }
 .btn{
  height: 2.2vw;
@@ -317,23 +319,26 @@ nav li a{
     outline: none;
     border: none;
     width: 100%;
+    background-color: #f8f8f8;
     font-size: 1.2vw;
 }
 .contact form textarea{
+    background-color: #f8f8f8;
     padding: 0.8vw 1.6vw;
     outline: none;
     border: none;
     width: 100%;
     font-size: 1.2vw;
 }
-.contact form .submit{
+.contact form button{
+    background-color: #f8f8f8;
     padding: 0.8vw 1.6vw;
     outline: none;
     border: none;
-    width: 100%;
+    /* width: 100%; */
     font-size: 1.2vw;
-    background-color: #161616;
-    color: #f8f8f8;
+    cursor: pointer;
+    border: 1px solid #161616;
 }
 
 footer{
@@ -446,6 +451,7 @@ footer>p span{
     height: 5.5vw;
     padding: 0 3vw;
     border: 1px solid #161616;
+    text-decoration: none;
 }
 .btn{
  height: 3.5vw;

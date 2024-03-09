@@ -48,8 +48,8 @@ tl.from(".about h1", {
         trigger: '.about h1',
         scroller: 'body',
         // markers: true,
-        start: 'top 70%',
-        end: 'top 50%',
+        start: 'top 90%',
+        end: 'top 70%',
         scrub: true
     }
 })
@@ -60,8 +60,8 @@ tl.from(".about h1", {
             trigger: '.about .line',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
 })
@@ -72,8 +72,8 @@ tl.from(".about h1", {
             trigger: '.about p',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
 })
@@ -84,8 +84,8 @@ tl.from(".about h1", {
             trigger: '.aboutbtn',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
 })
@@ -96,8 +96,8 @@ tl.from(".about h1", {
             trigger: '.skills h1',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
@@ -108,8 +108,8 @@ tl.from(".about h1", {
             trigger: '.skills .line',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
@@ -120,8 +120,8 @@ tl.from(".about h1", {
             trigger: '.skillimg',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
@@ -132,8 +132,8 @@ tl.from(".about h1", {
             trigger: '.projects h1',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
@@ -144,8 +144,8 @@ tl.from(".about h1", {
             trigger: '.projects .line',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
@@ -157,8 +157,8 @@ tl.from(".about h1", {
             trigger: '.projectimg',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
@@ -170,8 +170,8 @@ tl.from(".about h1", {
             trigger: '.projectdesc',
             scroller: 'body',
             // markers: true,
-            start: 'top 70%',
-            end: 'top 50%',
+            start: 'top 90%',
+            end: 'top 70%',
             scrub: true
         }
     })
