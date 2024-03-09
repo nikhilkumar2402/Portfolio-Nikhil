@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.main{
+    background-color: #f8f8f8;
+}
+.cursor{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #161616;
+    z-index: 999;
+    position: fixed;
+}
+nav{
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    height: 4vw;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.home{
+    height: calc(100vh - 4vw);
+    width: 100%;
+    /* background-color: rgb(232, 232, 250); */
+    display: flex;
+}
+.homeleft{
+    /* background-color: rgb(176, 255, 160); */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3vw;
+}
+.homeright{
+    /* background-color: rgb(255, 119, 119); */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeleft h2{
+    font-size: 4vw;
+    line-height: 5vw;
+}
+.homeleft h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10vw;
+    line-height: 9vw;
+    color: #161616;
+}
+.homeleft p{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+.homeleft p span{
+    font-size: 1.5vw;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+}
+
+.btnclass{
+    display: flex;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+.btnbox{
+    background-color: #f8f8f8;
+    width: fit-content;
+    height: 3.5vw;
+    padding: 0 2vw;
+    border: 1px solid #161616;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.btn{
+ height: 2.2vw;
+ overflow: hidden;
+    width: fit-content;
+    /* pointer-events: none; */
+    text-decoration: none;
+}
+.btn h4{
+ font-size: 1.5vw;
+ font-weight: 400;
+ color: #161616;
+ position: relative;
+ z-index: 3;
+}
+.blackbox{
+    height: 120%;
+    width: 120%;
+    background-color: #161616;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    top: 100%;
+    border-radius: 90%;
+}
+.homeright .imgcircle{
+    width: 40vw;
+    height: 40vw; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.homeright .imgcircle img{
+    height: 100%;
+}
+
+.homeleft h1{
+    width: 11ch;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+.about{
+    width: 100%;
+    /* background-color: red; */
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h1{
+    font-size: 3vw;
+    margin-bottom: 2.5vw;
+}
+.about p{
+    margin-top: 3vw;
+    font-size: 1.4vw;
+    width: 60%;
+    color: #161616;
+    text-align: center;
+}
+.about p:nth-last-child(2){
+    margin-top: 1vw;
+}
+.about p span{
+    font-size: 1.4vw;
+    width: 60%;
+    font-weight: 600;
+}
+.aboutbtn{
+    margin-top: 3vw;
+}
+
+.skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    margin-top: 3vw;
+}
+.skills h1{
+    font-size: 3vw;
+    margin-bottom: 2.5vw;
+}
+.skillimg{
+    background-color: #f3f2f2;
+    padding: 2vw 4vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    border-radius: 1vw;
+    width: fit-content;
+    margin-top: 3vw;
+}
+.skillimg img{
+    width: 7vw;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    margin-top: 3vw;
+}
+.line{
+    height: 0.5vw;
+    width: 3vw;
+    background-color: rgb(50, 0, 189);
+    border-radius: 3vw;
+    margin-top: -1vw;
+}
+.projects h1{
+    font-size: 3vw;
+    margin-bottom: 2.5vw;
+}
+.projectbox{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding: 2vw;
+    margin-top: 2vw;
+}
+.projectbox .projectimg{
+    height: 20vw;
+    width: 45%;
+    background-color: blue;
+    overflow: hidden;
+}
+.projectimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.projectbox .projectdesc{
+    height: 20vw;
+    width: 45%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projectdesc h2{
+   font-size: 2vw;
+}
+.projectdesc p{
+    margin-top: 0.5vw;
+   font-size: 1.3vw;
+}
+.projectbtn{
+    margin-top: 2vw;
+}
+.projectbtn .btn h4{
+    font-size: 1.3vw;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    margin-top: 3vw;
+}
+
+.contact h1{
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+}
+.contact p{
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+    width: 50%;
+    text-align: center;
+    line-height: 2vw;
+    margin-top: 3vw;
+}
+.contact form{
+    background-color: #e2e2e2;
+    width: 40%;
+    padding: 2vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.contact form input{
+    padding: 0.8vw 1.6vw;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.2vw;
+}
+.contact form textarea{
+    padding: 0.8vw 1.6vw;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.2vw;
+}
+.contact form .submit{
+    padding: 0.8vw 1.6vw;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.2vw;
+    background-color: #161616;
+    color: #f8f8f8;
+}
+
+footer{
+    background-color: #161616;
+    color: #f8f8f8;
+    padding: 3vw;
+    margin-top: 4vw;
+}
+.tfooter{
+    display: flex;
+    justify-content: space-between;
+}
+.tfooter .footerleft{
+    width: 40%;
+}
+.tfooter .footerleft h2{
+    font-size: 2vw;
+ font-family: "Bebas Neue", sans-serif;
+ font-weight: 100;
+ letter-spacing: 0.1vw;
+}
+.tfooter .footerleft p{
+    font-size: 1vw;
+}
+.tfooter .footerright{
+    width: 10%;
+}
+.footerright ul{
+    display: flex;
+    gap: 2vw;
+}
+.footerright h2{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.footerright ul li{
+    list-style: none;
+}
+.footerright ul li a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 1.5vw;
+}
+footer hr{
+    margin: 2vw 0;
+}
+footer>p{
+    text-align: center;
+    font-size: 1vw;
+}
+footer>p span{
+    font-size: 1vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    nav{
+        height: 13vw;
+        gap: 6vw;
+    }
+    nav li a{
+        font-size: 3vw;
+    }
+    .home{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10vw;
+        height: fit-content;
+    }
+    .homeright{
+        width: 100%;
+        height: fit-content;
+        margin-top: 8vw;
+    }
+    .homeleft{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeleft h2{
+    font-size: 10vw;
+    line-height: 10vw;
+}
+.homeleft h1{
+    font-size: 20vw;
+    line-height: 21vw;
+}
+.homeleft p{
+    font-size: 3vw;
+    line-height: 4vw;
+    text-align: center;
+}
+.homeleft p span{
+    font-size: 3vw;
+}
+
+.btnclass{
+    margin-top: 8vw;
+}
+.btnbox{
+    height: 5.5vw;
+    padding: 0 3vw;
+    border: 1px solid #161616;
+}
+.btn{
+ height: 3.5vw;
+ overflow: hidden;
+    width: fit-content;
+    pointer-events: none;
+}
+.btn h4{
+ font-size: 2.5vw;
+}
+    .homeright .imgcircle{
+    width: 90vw;
+    height: 90vw; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.homeright .imgcircle img{
+    height: 100%;
+}
+
+
+.about h1{
+    margin-top: 5vw;
+    font-size: 6vw;
+    margin-bottom: 2.5vw;
+}
+.about p{
+    font-size: 3vw;
+    width: 90%;
+}
+.about p:nth-last-child(2){
+    margin-top: 1vw;
+}
+.about p span{
+    font-size: 3vw;
+}
+.aboutbtn{
+    margin-top: 4vw;
+}
+
+.skills h1{
+    margin-top: 5vw;
+    font-size: 6vw;
+    margin-bottom: 2.5vw;
+}
+.skillimg img{
+    width: 16vw;
+}
+
+.line{
+    margin-bottom: 5vw;
+}
+
+.projects h1{
+    font-size: 6vw;
+    margin-bottom: 2.5vw;
+    margin-top: 5vw;
+}
+.projectbox{
+    width: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.projectbox .projectimg{
+    height: 40vw;
+    width: 80%;
+}
+.projectbox .projectdesc{
+    height: 30vw;
+    width: 80%;
+}
+.projectdesc h2{
+   font-size: 4vw;
+}
+.projectdesc p{
+    margin-top: 0.5vw;
+   font-size: 2.6vw;
+   line-height: 4vw;
+}
+.projectbtn{
+    margin-top: 2vw;
+}
+.projectbtn .btn h4{
+    font-size: 3vw;
+}
+
+
+
+.contact h1{
+    font-size: 6vw;
+    margin-bottom: 1.5vw;
+}
+.contact p{
+    font-size: 3vw;
+    margin-bottom: 5vw;
+    width: 70%;
+    line-height: 4vw;
+    margin-top: 5vw;
+}
+.contact form{
+    background-color: #e2e2e2;
+    width: 70%;
+    padding: 3.5vw;
+    margin-top: 3vw;
+    gap: 2vw;
+}
+.contact form input{
+    padding: 1vw 2vw;
+    font-size: 2.5vw;
+}
+.contact form textarea{
+    padding: 1vw 2vw;
+    width: 100%;
+    font-size: 2.5vw;
+}
+
+
+footer{
+    margin-top: 8vw;
+    padding:5vw;
+}
+.tfooter{
+    flex-direction: column-reverse;
+}
+.tfooter .footerleft h2{
+    font-size: 3.5vw;
+    margin-top: 3vw;
+}
+.tfooter .footerleft{
+    width: 50%;
+}
+.tfooter .footerleft p{
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+}
+.tfooter .footerright{
+    width: 50%;
+}
+.footerright h2{
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: -2vw;
+}
+.footerright ul li a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 3vw;
+}
+footer hr{
+    margin: 2vw 0;
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+footer>p{
+    font-size: 1.5vw;
+}
+footer>p span{
+    font-size: 1.5vw;
+}
+
+
+}
