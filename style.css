@@ -249,8 +249,8 @@ nav li a{
     margin-top: 2vw;
 }
 .projectbox .projectimg{
-    height: 20vw;
-    width: 45%;
+    height: 16vw;
+    width: 50%;
     background-color: blue;
     overflow: hidden;
 }
@@ -260,7 +260,7 @@ nav li a{
     object-fit: cover;
 }
 .projectbox .projectdesc{
-    height: 20vw;
+    height: 16vw;
     width: 45%;
     /* background-color: blue; */
     display: flex;
@@ -516,11 +516,11 @@ footer>p span{
 }
 .projectbox .projectimg{
     height: 40vw;
-    width: 80%;
+    width: 90%;
 }
 .projectbox .projectdesc{
     height: 30vw;
-    width: 80%;
+    width: 90%;
 }
 .projectdesc h2{
    font-size: 4vw;
